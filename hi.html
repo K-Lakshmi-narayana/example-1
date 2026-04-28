@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: black;
+            color: white;
+        }
+        .text{
+            text-align: center;
+        }
+        p{
+            margin-left: 50vw;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quote of the day...</h1>
+    <h1 class="text">కష్టం ఏది ఉండదు!! నేర్చుకోవాలి అంతే....</h1>
+    <p> - Devender</p>
+    <script>
+        const darkColors = [
+      "#0d1117", // blackish
+      "#1a1a2e", // dark navy blue
+      "#3b0a45", // dark purple
+      "#4a0000", // dark red
+      "#002b36", // dark teal
+      "#013220", // dark green
+      "#2f2f2f", // charcoal gray
+      "#2c003e", // deep violet
+      "#191970", // midnight blue
+      "#4b0082"  // indigo
+    ];
+
+    function changeColor() {
+      const randomColor = darkColors[Math.floor(Math.random() * darkColors.length)];
+      document.body.style.backgroundColor = randomColor;
+      // Adjust text color automatically for visibility
+      document.body.style.color = "#fff";
+    }
+
+    // Optional: change color automatically every few seconds
+    setInterval(changeColor, 2000);
+    </script>
+</body>
+</html>
